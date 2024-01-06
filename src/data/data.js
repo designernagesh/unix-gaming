@@ -7,21 +7,25 @@ const headerData = [
       {
         id: 1,
         name: "Home",
+        link: "/",
         hasSubmenu: false,
       },
       {
         id: 2,
         name: "Products",
+        link: "products",
         hasSubmenu: true,
       },
       {
         id: 3,
         name: "Buy unix token",
+        link: "buyUnix",
         hasSubmenu: true,
       },
       {
         id: 4,
         name: "Community",
+        link: "community",
         hasSubmenu: true,
       },
     ],

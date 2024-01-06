@@ -22,9 +22,9 @@ function Header() {
                     </Link>
                     <ul className={`${styles.menu} ${menuVisible ? styles.visible : ""}`}>
                         {menuItems.map(item => {
-                            const { id, name, hasSubmenu } = item;
+                            const { id, name, link, hasSubmenu } = item;
                             return <li key={id}>
-                                <Link to={`${name}`}>
+                                <Link to={`${link}`}>
                                     {name}
                                     {hasSubmenu && (
                                         <span className={styles.submenuIcon}><DownArrow /></span>
