@@ -1,0 +1,78 @@
+.services {
+    background: url('../../assets/images/services-bg.png') bottom left no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+  
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      @media screen and (min-width: 1200px) {
+        width: 1214px;
+      }
+      padding: 72px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .servicesList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 71px;
+      @media screen and (min-width: 1200px) {
+        gap: 50px;
+      }
+  
+      li {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        border-radius: 19px;
+        border: 2px solid #EE0BD7;
+        background: rgba(255, 255, 255, 0.10);
+        backdrop-filter: blur(16.5px);
+        text-align: center;
+  
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+  
+        span {
+          width: 84px;
+          height: 38px;
+          border-radius: 6px;
+          background: linear-gradient(90deg, #F204DA 0%, #9616C3 100%);
+  
+          font-size: 20px;
+          font-weight: 500;
+  
+          display: flex;
+          align-items: center;
+          justify-content: center;
+  
+          position: absolute;
+          top: 26px;
+          right: 33px;
+        }
+      }
+  
+      .image {
+        width: 165px;
+        height: 135px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,37 @@
+.partnerships {
+    margin-bottom: 162px;
+  
+    .container {
+      width: 1374px;
+    }
+  
+    .title {
+      text-align: center;
+      font-size: 60px;
+      font-weight: 800;
+      margin-bottom: 30px;
+    }
+  
+    .partnershipsList {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 31px;
+  
+      li {
+        width: 250px;
+        height: 94px;
+  
+        border-radius: 19px;
+        border: 2px solid #EE0BD7;
+        background: rgba(255, 255, 255, 0.10);
+        backdrop-filter: blur(16.53px);
+  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  

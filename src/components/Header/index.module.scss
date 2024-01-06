@@ -1,0 +1,115 @@
+.header {
+  padding: 32px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 64px 0;
+  }
+
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+      width: 1280px;
+    }
+  }
+
+  .logo {
+    img {
+      height: 50px;
+    }
+  }
+
+  .menu {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }      
+
+    li {
+      margin: 25px 0;
+
+      @media screen and (min-width: 1200px) {
+        margin: 0;
+        margin-right: 48px;
+      }
+
+      a {
+        font-size: 25px;
+        font-weight: 400;
+        color: #FFF;
+
+        span {
+          display: inline-block;
+          margin-left: 9px;
+        }
+      }
+    }
+  }
+
+  .btnLogin {
+    display: inline-flex;
+    padding: 13px 41px;
+    border-radius: 57px;
+    border: 2px solid #EE0BD7;
+    background: rgba(255, 255, 255, 0.10);
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: auto;
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 0;
+    }
+  }
+
+  .menuToggle {
+    display: block;
+
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+  }
+
+  .toggleIcon {
+    display: block;
+    font-size: 32px;
+    background: transparent;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+  }
+}
+
+/* Media query for screens below 768px */
+@media screen and (max-width: 1200px) {
+  .header {
+    .menu {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      flex-direction: column;
+      text-align: center;
+      padding: 15px;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      right: 0;
+      background-color: #333;
+
+      &.visible {
+        display: flex;
+        opacity: 1;
+      }
+    }
+  }
+}

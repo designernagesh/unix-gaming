@@ -1,0 +1,164 @@
+.ecosystem {
+    margin-bottom: 193px;
+  
+    .titleContainer {
+      width: 100%;
+      @media screen and (min-width: 1200px) {
+        width: 875px;
+      }
+      margin: 0 auto 63px;
+      text-align: center;
+  
+      .title {
+        font-size: 60px;
+        font-weight: 800;
+        margin-bottom: 20px;
+      }
+  
+      .text {
+        font-size: 25px;
+        font-weight: 400;
+      }
+    }
+    
+    .ecoInfo {
+      margin-bottom: 103px;
+      
+      .container {
+        flex-direction: column;
+        margin: 0 auto;
+        @media screen and (min-width: 1200px) {
+          width: 1280px;
+          flex-direction: row;
+        }
+        display: flex;
+      }
+      
+      .question {
+        width: 100%;
+        @media screen and (min-width: 1200px) {
+        width: 443px;
+        }
+        height: 72px;
+  
+        border-radius: 7px;
+        border: 1px solid #EE0BD7;
+        border-left: 12px solid #EE0BD7;
+        background: rgba(255, 255, 255, 0.10);
+        backdrop-filter: blur(16.53px);
+  
+        padding: 18px 15px 18px 5px;
+  
+        font-size: 30px;
+        font-weight: 500;
+        
+        display: flex;
+        align-items: center;
+        
+        cursor: pointer;
+        
+        svg {
+          margin-right: 20px;
+          font-size: 48px;
+        }
+      }
+  
+      .content {
+        width: 100%;
+        @media screen and (min-width: 1200px) {
+          width: 572px;
+        }
+        position: relative;
+        font-size: 25px;
+        font-weight: 400;
+        text-align: justify;
+        line-height: 30px;
+        height: 0;
+        overflow: hidden;
+        transition: all 1s;
+  
+        .description {
+          margin-bottom: 31px;
+        }
+      }
+  
+      .content.open {
+        height: auto;
+        margin-top: 20px;
+      }
+  
+      .pointsList {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  
+        li {
+          padding: 20px 0;
+          border-top: 1px solid rgba(255, 255, 255, 0.21);
+        }
+      }
+    }
+  
+    .customerProduct {
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        @media screen and (min-width: 1200px) {
+          width: 1280px;
+        }
+      }
+      
+      .content {
+        width: 100%;
+        order: 2;
+        @media screen and (min-width: 1200px) {
+          width: 670px;
+          order: 1;
+        }
+        .title {
+          font-size: 60px;
+          font-weight: 800;
+          margin-bottom: 20px;
+        }
+  
+        .text {
+          font-size: 25px;
+          font-weight: 400;
+          margin-bottom: 56px;
+        }
+  
+        .productBtn {
+          display: flex;
+          width: 285px;
+          padding: 13px 40px;
+  
+          border-radius: 57px;
+          border: 2px solid #EE0BD7;
+          background: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(16.53px);
+  
+          .icon {
+            margin-right: 10px;
+            display: inline-block;
+          }
+  
+          .btnText {
+            font-size: 25px;
+            font-weight: 400;
+  
+            background: linear-gradient(90deg, #F20493 18.03%, #9616C3 99.67%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }  
+        }
+      }
+  
+      .image {
+        order: 1;
+        @media screen and (min-width: 1200px) {
+          order: 2;
+        }
+      }
+    }
+  }
+  

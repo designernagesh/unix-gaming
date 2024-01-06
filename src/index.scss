@@ -1,0 +1,91 @@
+/* Reset some default styles and provide a basic styling */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  line-height: normal;
+  color: #FFF;
+  background-color: #0B0A0A;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Container to center content on the page */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Responsive image */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+}
+
+input {
+  color: #FFF;
+}
+
+/* 
+  Error / Products / Buy Unix / Community Pages
+*/
+.products-page,
+.buyUnix-page,
+.community-page,
+.error-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+
+  .title {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
