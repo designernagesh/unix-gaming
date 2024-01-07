@@ -65,7 +65,7 @@ const servicesData = [
 const ecosystemData = [
   {
     id: 1,
-    question: "Platform for gamers1",
+    question: "Platform for gamers",
     description:
       "owned is not another p2e platform. It’s the only platform that puts games & gamers first. find play-to-own games based on user review.",
     points: [

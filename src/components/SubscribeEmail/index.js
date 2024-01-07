@@ -10,7 +10,7 @@ function SubscribeEmail() {
           <p className={styles.text}>when it comes to partnering new blockchain games, we only want to partner with project of class,continue to drive the future evolution of blockchaining games.</p>
 
           <div className={styles.inputGroup}>
-            <input type={styles.text} placeholder='Youe email here' />
+            <input type={styles.text} placeholder='Your email here' />
             <button type='button'>Submit</button>
           </div>
         </div>

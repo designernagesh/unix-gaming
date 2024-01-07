@@ -4,6 +4,7 @@ import cart from '../../assets/images/cart.png';
 import { useState } from "react";
 import { ecosystemData } from "../../data/data";
 import { IoMdArrowDropdown, IoMdArrowDropup, IoMdArrowDropright } from "react-icons/io";
+import splash from '../../assets/images/ecoSplash.png';
 import styles from './index.module.scss';
 
 function Ecosystem() {
@@ -22,7 +23,7 @@ function Ecosystem() {
           interested in, and we help you find others to share your interests.</p>
       </div>
 
-      <div className={styles.ecoInfo}>
+      <div className={styles.ecoInfo} style={{ backgroundImage: `url(${splash})` }}>
         <div className={styles.container}>
           <div className={styles.image}>
             <img src={platformGamers} alt='Platform Gamers' />
@@ -56,7 +57,7 @@ function Ecosystem() {
         </div>
       </div>
 
-      <div className={styles.customerProduct}>
+      <div className={styles.customerProduct} style={{ backgroundImage: `url(${splash})` }}>
         <div className={styles.container}>
           <div className={styles.content}>
             <h2 className={styles.title}>Product, defined by it’s customer</h2>

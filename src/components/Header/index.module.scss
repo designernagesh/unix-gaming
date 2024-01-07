@@ -55,16 +55,18 @@
 
   .btnLogin {
     display: inline-flex;
-    padding: 13px 41px;
     border-radius: 57px;
     border: 2px solid #EE0BD7;
     background: rgba(255, 255, 255, 0.10);
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 400;
     margin-left: auto;
-
+    padding: 10px 30px;
+    
     @media screen and (min-width: 1200px) {
+      font-size: 25px;
       margin-left: 0;
+      padding: 13px 41px;
     }
   }
 
