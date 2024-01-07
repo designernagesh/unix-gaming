@@ -8,15 +8,15 @@ import ErrorPage from "./pages/ErrorPage";
 function App() {
   return (
     <>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" exact element={<HomePage />} />
-        <Route path="/products" element={<ProductsPage />} />
-        <Route path="/buyunix" element={<BuyUnixPage />} />
-        <Route path="/community" element={<CommunityPage />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" exact element={<HomePage />} />
+          <Route path="/products" element={<ProductsPage />} />
+          <Route path="/buyunix" element={<BuyUnixPage />} />
+          <Route path="/community" element={<CommunityPage />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

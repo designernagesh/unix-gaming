@@ -7,16 +7,16 @@ function Services() {
       <div className={styles.container}>
         <ul className={styles.servicesList}>
           {
-            servicesData.map( service => {
+            servicesData.map(service => {
               const { id, count, image, name } = service;
               return <li key={id}>
-                <span>{ count }</span>
+                <span>{count}</span>
                 <div className={styles.image}>
                   <img src={`./assets/images/${image}`} alt={name} />
                 </div>
                 <p>{name}</p>
               </li>
-              })
+            })
           }
         </ul>
       </div>

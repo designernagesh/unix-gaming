@@ -7,7 +7,7 @@ function Partnerships() {
       <h2 className={styles.title}>Partnerships</h2>
       <ul className={styles.partnershipsList}>
         {
-          partnershipsData.map( partner => {
+          partnershipsData.map(partner => {
             const { id, image, name } = partner;
             return (
               <li key={id}>
